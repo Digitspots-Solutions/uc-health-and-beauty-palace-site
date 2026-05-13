@@ -1,0 +1,42 @@
+{
+  "businessName": "UC Health and Beauty Palace",
+  "industry": "Fashion and Creative Design",
+  "tone": "warm, inviting, creative",
+  "tagline": "Where Style Meets Elegance in Umuahia",
+  "sections": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "copy": "Welcome to UC Health and Beauty Palace – your premier destination for fashion and creative design in Umuahia. We bring your style vision to life with expert craftsmanship, personalized service, and an eye for detail that makes you stand out.",
+      "imagePrompt": "A sophisticated Nigerian fashion boutique interior with elegant clothing displays, warm golden lighting, modern mannequins showcasing contemporary African fashion designs, polished wooden floors, and stylish decor elements. Professional photography style, inviting atmosphere, Umuahia aesthetic.",
+      "layout": "centered"
+    },
+    {
+      "id": "about",
+      "name": "About Us",
+      "copy": "At UC Health and Beauty Palace, we are passionate about helping you express your unique style. Located in the heart of Umuahia North, we specialize in fashion design, creative styling, and beauty consulting services that celebrate Nigerian elegance. Our experienced team combines traditional craftsmanship with modern trends to deliver exceptional results that exceed expectations. Whether you're looking for custom fashion pieces, style consultation, or creative design services, we're here to make you look and feel your absolute best.",
+      "imagePrompt": "A welcoming Nigerian fashion designer's studio with colorful fabric swatches, sewing machines, dress forms with beautiful garments, natural lighting through large windows, African textile patterns, and a professional yet warm working environment in Umuahia.",
+      "layout": "split"
+    },
+    {
+      "id": "services",
+      "name": "Our Services",
+      "copy": "Custom Fashion Design - From traditional attire to contemporary styles, we create bespoke clothing that fits perfectly and reflects your personality.\n\nCreative Styling - Expert fashion consultation and personal styling services to help you curate the perfect look for any occasion.\n\nBeauty Consulting - Professional advice on enhancing your natural beauty and developing your signature style.\n\nAlterations & Tailoring - Precision alterations and tailoring services to ensure your garments fit flawlessly.\n\nEvent Styling - Complete styling packages for weddings, corporate events, and special occasions.\n\nFashion Training - Learn the art of fashion design and creative styling through our specialized training programs.",
+      "imagePrompt": "A vibrant collage showcasing Nigerian fashion services: elegant custom-made dresses on display, a stylist consulting with a client, colorful African fabrics and textiles, sewing equipment, fashion sketches, and beautiful finished garments. Bright, professional, and inspiring atmosphere.",
+      "layout": "grid"
+    },
+    {
+      "id": "contact",
+      "name": "Visit Us Today",
+      "copy": "Ready to elevate your style? Visit UC Health and Beauty Palace today or reach out to schedule your consultation. We're conveniently located in Umuahia North and ready to bring your fashion dreams to life.\n\nApostle Christian Amajuoyi's compound, orie ugwu afaraukwu ibeku, Umuahia, Abia State.\n\nCall or WhatsApp us at 0806 259 3303 to book your appointment. Walk-ins are also welcome during business hours. Let's create something beautiful together!",
+      "imagePrompt": "A welcoming storefront of a Nigerian fashion boutique in Umuahia with clear signage, inviting entrance, lush greenery, clean modern architecture, and warm lighting. Professional business photography showing the exterior and surrounding area in Abia State.",
+      "layout": "centered"
+    }
+  ],
+  "contact": {
+    "phone": "08062593303",
+    "email": "",
+    "address": "Apostle Christian Amajuoyi's compound, orie ugwu afaraukwu ibeku, Umuahia, Abia State",
+    "whatsapp": "https://wa.me/2348062593303"
+  }
+}
