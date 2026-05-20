@@ -1,42 +1,42 @@
 {
-  "businessName": "UC Health and Beauty Palace",
-  "industry": "Fashion and Creative Design",
-  "tone": "warm, inviting, creative",
-  "tagline": "Where Style Meets Elegance in Umuahia",
+  "businessName": "Fajibs Cakez Edible Solutions Limited",
+  "industry": "FoodTech",
+  "tone": "innovative yet warm and approachable",
+  "tagline": "Where Culinary Innovation Meets Technology",
   "sections": [
     {
       "id": "hero",
       "name": "Hero",
-      "copy": "Welcome to UC Health and Beauty Palace – your premier destination for fashion and creative design in Umuahia. We bring your style vision to life with expert craftsmanship, personalized service, and an eye for detail that makes you stand out.",
-      "imagePrompt": "A sophisticated Nigerian fashion boutique interior with elegant clothing displays, warm golden lighting, modern mannequins showcasing contemporary African fashion designs, polished wooden floors, and stylish decor elements. Professional photography style, inviting atmosphere, Umuahia aesthetic.",
+      "copy": "Welcome to Fajibs Cakez Edible Solutions Limited – pioneering the future of food technology in Nigeria. From artisanal baked goods to cutting-edge poultry solutions, we combine traditional craftsmanship with modern innovation to deliver exceptional edible products and foodservice technology solutions across Abia State and beyond.",
+      "imagePrompt": "A vibrant, modern Nigerian food production facility with gleaming stainless steel equipment, fresh baked goods on cooling racks in the foreground, and happy staff in pristine white uniforms working with advanced food technology equipment. Warm golden lighting, professional photography, showcasing both traditional Nigerian baking and modern tech integration. High resolution, photorealistic.",
       "layout": "centered"
     },
     {
       "id": "about",
       "name": "About Us",
-      "copy": "At UC Health and Beauty Palace, we are passionate about helping you express your unique style. Located in the heart of Umuahia North, we specialize in fashion design, creative styling, and beauty consulting services that celebrate Nigerian elegance. Our experienced team combines traditional craftsmanship with modern trends to deliver exceptional results that exceed expectations. Whether you're looking for custom fashion pieces, style consultation, or creative design services, we're here to make you look and feel your absolute best.",
-      "imagePrompt": "A welcoming Nigerian fashion designer's studio with colorful fabric swatches, sewing machines, dress forms with beautiful garments, natural lighting through large windows, African textile patterns, and a professional yet warm working environment in Umuahia.",
+      "copy": "Fajibs Cakez Edible Solutions Limited (also trading as Fajibs Cakez Foodservice Tech Co) represents the convergence of culinary excellence and technological innovation. Founded and managed by an experienced Poultry Tech Manager, we understand the intricate balance between food safety, quality production, and scalable technology solutions.\n\nOur facility in Umuahia North serves as the hub for our diverse operations – from creating delectable cakes and pastries that grace celebrations across Abia State, to providing comprehensive poultry technology management and foodservice solutions for businesses looking to modernize their operations.\n\nWe don't just follow food trends; we create them. Our commitment to innovation means constantly exploring new techniques, ingredients, and technologies that enhance food production, preservation, and delivery. Whether you're a customer seeking premium baked goods or a business partner looking for foodtech solutions, Fajibs Cakez delivers excellence at every touchpoint.",
+      "imagePrompt": "A split composition showing dual aspects of the business: on one side, an elegant multi-tiered celebration cake with Nigerian-inspired decorations and fresh fruits; on the other side, modern poultry farm technology with automated feeding systems and monitoring equipment. Both sides connected by warm, professional lighting. Shot in Umuahia, Nigeria setting with local architectural elements visible in background. Photorealistic, editorial quality.",
       "layout": "split"
     },
     {
       "id": "services",
-      "name": "Our Services",
-      "copy": "Custom Fashion Design - From traditional attire to contemporary styles, we create bespoke clothing that fits perfectly and reflects your personality.\n\nCreative Styling - Expert fashion consultation and personal styling services to help you curate the perfect look for any occasion.\n\nBeauty Consulting - Professional advice on enhancing your natural beauty and developing your signature style.\n\nAlterations & Tailoring - Precision alterations and tailoring services to ensure your garments fit flawlessly.\n\nEvent Styling - Complete styling packages for weddings, corporate events, and special occasions.\n\nFashion Training - Learn the art of fashion design and creative styling through our specialized training programs.",
-      "imagePrompt": "A vibrant collage showcasing Nigerian fashion services: elegant custom-made dresses on display, a stylist consulting with a client, colorful African fabrics and textiles, sewing equipment, fashion sketches, and beautiful finished garments. Bright, professional, and inspiring atmosphere.",
+      "name": "Our Solutions",
+      "copy": "**Artisanal Bakery Services**\nCustom celebration cakes, wedding cakes, birthday cakes, corporate event pastries, cupcakes, and specialty desserts crafted with premium ingredients and creative designs that tell your story.\n\n**Poultry Technology Management**\nComprehensive poultry farm setup, management consulting, automated feeding systems, health monitoring solutions, and production optimization for commercial poultry operations.\n\n**Foodservice Technology Solutions**\nRestaurant kitchen optimization, food safety systems, inventory management technology, cold chain solutions, and digital ordering platforms for food businesses.\n\n**Product Development & Consulting**\nCustom recipe development, food product formulation, shelf-life optimization, packaging solutions, and market entry strategies for food entrepreneurs.\n\n**Bulk & Wholesale Supply**\nCommercial bakery supplies, ingredients sourcing, bulk poultry products, and B2B foodservice provisions for restaurants, hotels, and event centers across Abia State.",
+      "imagePrompt": "A modern grid layout of five distinct service areas: a beautifully decorated Nigerian celebration cake with intricate fondant work, automated poultry farm with chickens and technology equipment, a sleek restaurant kitchen with digital displays, food scientists in a lab developing products, and wholesale food supplies in organized storage. Each section vibrant, professional, and distinctly Nigerian in character. Photorealistic, bright natural lighting.",
       "layout": "grid"
     },
     {
       "id": "contact",
-      "name": "Visit Us Today",
-      "copy": "Ready to elevate your style? Visit UC Health and Beauty Palace today or reach out to schedule your consultation. We're conveniently located in Umuahia North and ready to bring your fashion dreams to life.\n\nApostle Christian Amajuoyi's compound, orie ugwu afaraukwu ibeku, Umuahia, Abia State.\n\nCall or WhatsApp us at 0806 259 3303 to book your appointment. Walk-ins are also welcome during business hours. Let's create something beautiful together!",
-      "imagePrompt": "A welcoming storefront of a Nigerian fashion boutique in Umuahia with clear signage, inviting entrance, lush greenery, clean modern architecture, and warm lighting. Professional business photography showing the exterior and surrounding area in Abia State.",
+      "name": "Get In Touch",
+      "copy": "Ready to experience the Fajibs Cakez difference? Whether you need a show-stopping cake for your next celebration, want to upgrade your poultry operations, or seek innovative foodservice technology solutions, we're here to help.\n\n**Visit Our Facility:**\nApostle Christian Amajuoyi's compound, Orie Ugwu Afaraukwu Ibeku, Umuahia North, Abia State, Nigeria\n\n**Call or WhatsApp:**\n+234 806 259 3303\n\n**Business Hours:**\nMonday – Friday: 8:00 AM – 6:00 PM\nSaturday: 9:00 AM – 4:00 PM\nSunday: By Appointment Only\n\nFor custom cake orders, please contact us at least 72 hours in advance. For poultry tech consultations and foodservice solutions, schedule a free initial assessment by calling or messaging us on WhatsApp.",
+      "imagePrompt": "A welcoming Nigerian business storefront in Umuahia with the Fajibs Cakez signage, showing a clean modern facade, potted plants at the entrance, friendly staff member waving at camera, and a glimpse of the interior showing both a bakery display case and professional equipment. Bright daylight, inviting atmosphere, photorealistic. Include subtle Nigerian architectural elements and local landscape.",
       "layout": "centered"
     }
   ],
   "contact": {
-    "phone": "08062593303",
-    "email": "",
-    "address": "Apostle Christian Amajuoyi's compound, orie ugwu afaraukwu ibeku, Umuahia, Abia State",
+    "phone": "+234 806 259 3303",
+    "email": "info@fajibscakez.com",
+    "address": "Apostle Christian Amajuoyi's compound, Orie Ugwu Afaraukwu Ibeku, Umuahia North, Abia State, Nigeria",
     "whatsapp": "https://wa.me/2348062593303"
   }
 }
