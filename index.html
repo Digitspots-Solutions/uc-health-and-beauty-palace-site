@@ -3,21 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UC Health and Beauty Palace - Where Style Meets Elegance in Umuahia</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Nunito+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Fajibs Cakez Edible Solutions Limited - Where Culinary Innovation Meets Technology</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Outfit:wght@300;400;500&display=swap">
     <style>
         :root {
-            --color-primary: #1c0b29;
-            --color-accent: #c04590;
-            --color-bg: #F8F4FA;
-            --color-text: #180A22;
-            --color-surface: #240d34;
-            --color-secondary-accent: #cea393;
-            --font-display: 'Cormorant Garamond', serif;
-            --font-body: 'Nunito Sans', sans-serif;
-            --border-radius: 22px;
+            --primary-color: #060b12;
+            --accent-color: #ff5500;
+            --bg-color: #FAFAFA;
+            --text-color: #0A1022;
+            --surface-color: #131a27;
+            --secondary-accent: #06be61;
+            --font-display: 'Oswald', sans-serif;
+            --font-body: 'Outfit', sans-serif;
+            --border-radius: 12px;
         }
 
         * {
@@ -32,14 +30,15 @@
 
         body {
             font-family: var(--font-body);
-            color: var(--color-text);
-            background-color: var(--color-bg);
+            color: var(--text-color);
+            background-color: var(--bg-color);
             line-height: 1.6;
         }
 
         h1, h2, h3, h4, h5, h6 {
             font-family: var(--font-display);
-            font-weight: 600;
+            font-weight: 700;
+            line-height: 1.2;
         }
 
         @keyframes fadeUp {
@@ -53,21 +52,20 @@
             }
         }
 
-        /* Navigation */
         nav {
-            position: fixed;
+            position: sticky;
             top: 0;
-            width: 100%;
-            background: rgba(248, 244, 250, 0.95);
+            background: rgba(250, 250, 250, 0.95);
             backdrop-filter: blur(10px);
             z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            padding: 1rem 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .nav-container {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 1rem 2rem;
+            padding: 0 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -76,26 +74,26 @@
         .logo {
             font-family: var(--font-display);
             font-size: 1.5rem;
-            font-weight: 600;
-            color: var(--color-primary);
+            font-weight: 700;
+            color: var(--primary-color);
             text-decoration: none;
         }
 
         .nav-links {
             display: flex;
-            list-style: none;
             gap: 2rem;
+            list-style: none;
         }
 
         .nav-links a {
             text-decoration: none;
-            color: var(--color-text);
+            color: var(--text-color);
             font-weight: 500;
             transition: color 0.3s ease;
         }
 
         .nav-links a:hover {
-            color: var(--color-accent);
+            color: var(--accent-color);
         }
 
         .mobile-menu-btn {
@@ -108,7 +106,7 @@
         .mobile-menu-btn span {
             width: 25px;
             height: 3px;
-            background: var(--color-text);
+            background: var(--text-color);
             transition: all 0.3s ease;
             transform-origin: center;
         }
@@ -131,7 +129,7 @@
             right: -100%;
             width: 300px;
             height: calc(100vh - 70px);
-            background: var(--color-bg);
+            background: var(--bg-color);
             box-shadow: -2px 0 10px rgba(0,0,0,0.1);
             transition: right 0.3s ease;
             z-index: 999;
@@ -152,7 +150,7 @@
 
         .mobile-menu ul a {
             text-decoration: none;
-            color: var(--color-text);
+            color: var(--text-color);
             font-size: 1.1rem;
             font-weight: 500;
             transition: color 0.3s ease;
@@ -161,20 +159,38 @@
         }
 
         .mobile-menu ul a:hover {
-            color: var(--color-accent);
+            color: var(--accent-color);
         }
 
-        /* Hero Section */
+        section {
+            padding: 80px 2rem;
+            animation: fadeUp 0.6s ease forwards;
+        }
+
         #hero {
+            animation-delay: 0s;
+        }
+
+        #about {
+            animation-delay: 0.1s;
+        }
+
+        #services {
+            animation-delay: 0.2s;
+        }
+
+        #contact {
+            animation-delay: 0.3s;
+        }
+
+        .hero-section {
             position: relative;
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            color: white;
             overflow: hidden;
-            animation: fadeUp 0.6s ease forwards;
         }
 
         .hero-image {
@@ -201,89 +217,66 @@
             position: relative;
             z-index: 3;
             max-width: 900px;
-            padding: 0 2rem;
+            padding: 2rem;
+            color: white;
         }
 
         .hero-content h1 {
-            font-size: 4rem;
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-content .tagline {
+            font-size: 1.5rem;
             margin-bottom: 1.5rem;
-            line-height: 1.2;
+            font-weight: 300;
         }
 
         .hero-content p {
-            font-size: 1.25rem;
+            font-size: 1.1rem;
             margin-bottom: 2rem;
             line-height: 1.8;
         }
 
         .cta-button {
             display: inline-block;
-            padding: 1rem 2.5rem;
-            background: var(--color-accent);
+            background: var(--accent-color);
             color: white;
-            text-decoration: none;
+            padding: 1rem 2.5rem;
             border-radius: var(--border-radius);
-            font-weight: 500;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(192, 69, 144, 0.3);
+            box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
         }
 
         .cta-button:hover {
-            background: #a03377;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(192, 69, 144, 0.4);
-        }
-
-        /* Section Styles */
-        section {
-            padding: 80px 2rem;
-            animation: fadeUp 0.6s ease forwards;
-        }
-
-        section:nth-child(2) {
-            animation-delay: 0.1s;
-        }
-
-        section:nth-child(3) {
-            animation-delay: 0.2s;
-        }
-
-        section:nth-child(4) {
-            animation-delay: 0.3s;
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
         }
 
         .container {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
         }
 
         .section-title {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            color: var(--color-primary);
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
             text-align: center;
+            color: var(--primary-color);
         }
 
-        .section-subtitle {
-            text-align: center;
-            font-size: 1.125rem;
-            color: var(--color-text);
-            opacity: 0.8;
-            margin-bottom: 3rem;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* About Section */
-        #about {
+        .about-section {
             background: white;
         }
 
         .about-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 4rem;
+            gap: 3rem;
             align-items: center;
         }
 
@@ -292,17 +285,22 @@
             height: 500px;
             object-fit: cover;
             border-radius: var(--border-radius);
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            box-shadow: 8px 8px 0 var(--secondary-accent);
         }
 
-        .about-text {
-            font-size: 1.125rem;
+        .about-text p {
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
             line-height: 1.8;
         }
 
-        /* Services Section */
-        #services {
-            background: var(--color-bg);
+        .services-section {
+            background: var(--surface-color);
+            color: white;
+        }
+
+        .services-section .section-title {
+            color: white;
         }
 
         .services-grid {
@@ -313,139 +311,125 @@
         }
 
         .service-card {
-            background: white;
+            background: rgba(255, 255, 255, 0.1);
             padding: 2rem;
             border-radius: var(--border-radius);
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
             transition: all 0.3s ease;
+            border: 2px solid transparent;
         }
 
         .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(192, 69, 144, 0.15);
+            border-color: var(--accent-color);
+            transform: translateY(-4px);
+            box-shadow: 4px 4px 0 var(--accent-color);
         }
 
         .service-card h3 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
-            color: var(--color-primary);
+            color: var(--secondary-accent);
         }
 
         .service-card p {
             line-height: 1.7;
-            color: var(--color-text);
         }
 
-        /* Contact Section */
-        #contact {
-            background: var(--color-surface);
-            color: white;
-            text-align: center;
-        }
-
-        #contact .section-title {
-            color: white;
+        .contact-section {
+            background: white;
         }
 
         .contact-content {
             max-width: 800px;
             margin: 0 auto;
+            text-align: center;
         }
 
         .contact-content p {
-            font-size: 1.125rem;
-            line-height: 1.8;
             margin-bottom: 2rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
         }
 
-        .contact-details {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-            margin: 3rem 0;
+        .contact-info {
+            background: var(--bg-color);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            margin: 2rem 0;
+            text-align: left;
+            box-shadow: 4px 4px 0 var(--surface-color);
         }
 
-        .contact-item {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-            font-size: 1.125rem;
+        .contact-info h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
         }
 
-        .contact-item a {
-            color: var(--color-accent);
+        .contact-info p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        .contact-info a {
+            color: var(--accent-color);
             text-decoration: none;
-            transition: color 0.3s ease;
+            font-weight: 500;
         }
 
-        .contact-item a:hover {
-            color: var(--color-secondary-accent);
+        .contact-info a:hover {
+            text-decoration: underline;
         }
 
         .whatsapp-button {
             display: inline-block;
-            padding: 1rem 2.5rem;
             background: #25D366;
             color: white;
-            text-decoration: none;
+            padding: 1rem 2rem;
             border-radius: var(--border-radius);
-            font-weight: 500;
-            transition: all 0.3s ease;
+            text-decoration: none;
+            font-weight: 600;
             margin-top: 1rem;
+            transition: all 0.3s ease;
+            box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
         }
 
         .whatsapp-button:hover {
-            background: #20BA5A;
-            transform: translateY(-2px);
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
         }
 
-        /* WhatsApp Floating Button */
         .whatsapp-float {
             position: fixed;
-            bottom: 30px;
-            right: 30px;
+            bottom: 2rem;
+            right: 2rem;
+            background: #25D366;
+            color: white;
             width: 60px;
             height: 60px;
-            background: #25D366;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            font-size: 2rem;
+            text-decoration: none;
+            box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
             z-index: 999;
             transition: all 0.3s ease;
-            text-decoration: none;
         }
 
         .whatsapp-float:hover {
             transform: scale(1.1);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
         }
 
-        .whatsapp-float svg {
-            width: 35px;
-            height: 35px;
-            fill: white;
-        }
-
-        /* Footer */
         footer {
-            background: var(--color-primary);
+            background: var(--primary-color);
             color: white;
             text-align: center;
             padding: 2rem;
         }
 
-        /* Responsive */
-        @media (max-width: 1024px) {
-            .hero-content h1 {
-                font-size: 3rem;
-            }
-
-            .section-title {
-                font-size: 2.5rem;
-            }
+        footer p {
+            margin: 0;
         }
 
         @media (max-width: 768px) {
@@ -458,28 +442,31 @@
             }
 
             section {
-                padding: 48px 1.5rem;
+                padding: 48px 1rem;
             }
 
             .hero-content h1 {
-                font-size: 2.25rem;
+                font-size: 2rem;
+            }
+
+            .hero-content .tagline {
+                font-size: 1.1rem;
             }
 
             .hero-content p {
-                font-size: 1.125rem;
+                font-size: 1rem;
             }
 
             .section-title {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
 
             .about-content {
                 grid-template-columns: 1fr;
-                gap: 2rem;
             }
 
             .about-image {
-                height: 350px;
+                height: 300px;
             }
 
             .services-grid {
@@ -487,28 +474,48 @@
             }
 
             .whatsapp-float {
-                bottom: 20px;
-                right: 20px;
+                bottom: 1rem;
+                right: 1rem;
                 width: 50px;
                 height: 50px;
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content h1 {
+                font-size: 1.5rem;
             }
 
-            .whatsapp-float svg {
-                width: 28px;
-                height: 28px;
+            .cta-button {
+                padding: 0.8rem 1.5rem;
+                font-size: 1rem;
+            }
+
+            .nav-container {
+                padding: 0 1rem;
+            }
+
+            .logo {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            section {
+                padding: 80px 2rem;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <a href="#hero" class="logo">UC Health and Beauty Palace</a>
+            <a href="#hero" class="logo">Fajibs Cakez</a>
             <ul class="nav-links">
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
+                <li><a href="#services">Solutions</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="mobile-menu-btn">
@@ -519,107 +526,104 @@
         </div>
     </nav>
 
-    <!-- Mobile Menu -->
     <div class="mobile-menu">
         <ul>
             <li><a href="#hero">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
+            <li><a href="#services">Solutions</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <img src="https://images.pexels.com/photos/35045845/pexels-photo-35045845.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="UC Health and Beauty Palace" class="hero-image">
+    <section id="hero" class="hero-section">
+        <img src="https://images.pexels.com/photos/20444522/pexels-photo-20444522.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Fajibs Cakez facility" class="hero-image">
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>UC Health and Beauty Palace</h1>
-            <p>Welcome to UC Health and Beauty Palace – your premier destination for fashion and creative design in Umuahia. We bring your style vision to life with expert craftsmanship, personalized service, and an eye for detail that makes you stand out.</p>
-            <a href="#contact" class="cta-button">Get Started</a>
+            <h1>Fajibs Cakez Edible Solutions Limited</h1>
+            <p class="tagline">Where Culinary Innovation Meets Technology</p>
+            <p>Welcome to Fajibs Cakez Edible Solutions Limited – pioneering the future of food technology in Nigeria. From artisanal baked goods to cutting-edge poultry solutions, we combine traditional craftsmanship with modern innovation to deliver exceptional edible products and foodservice technology solutions across Abia State and beyond.</p>
+            <a href="#contact" class="cta-button">Get In Touch</a>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about">
+    <section id="about" class="about-section">
         <div class="container">
             <h2 class="section-title">About Us</h2>
             <div class="about-content">
-                <img src="https://images.pexels.com/photos/35689783/pexels-photo-35689783.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="UC Health and Beauty Palace Studio" class="about-image">
+                <img src="https://images.pexels.com/photos/7828283/pexels-photo-7828283.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Fajibs Cakez products and technology" class="about-image">
                 <div class="about-text">
-                    <p>At UC Health and Beauty Palace, we are passionate about helping you express your unique style. Located in the heart of Umuahia North, we specialize in fashion design, creative styling, and beauty consulting services that celebrate Nigerian elegance. Our experienced team combines traditional craftsmanship with modern trends to deliver exceptional results that exceed expectations. Whether you're looking for custom fashion pieces, style consultation, or creative design services, we're here to make you look and feel your absolute best.</p>
+                    <p>Fajibs Cakez Edible Solutions Limited (also trading as Fajibs Cakez Foodservice Tech Co) represents the convergence of culinary excellence and technological innovation. Founded and managed by an experienced Poultry Tech Manager, we understand the intricate balance between food safety, quality production, and scalable technology solutions.</p>
+                    <p>Our facility in Umuahia North serves as the hub for our diverse operations – from creating delectable cakes and pastries that grace celebrations across Abia State, to providing comprehensive poultry technology management and foodservice solutions for businesses looking to modernize their operations.</p>
+                    <p>We don't just follow food trends; we create them. Our commitment to innovation means constantly exploring new techniques, ingredients, and technologies that enhance food production, preservation, and delivery. Whether you're a customer seeking premium baked goods or a business partner looking for foodtech solutions, Fajibs Cakez delivers excellence at every touchpoint.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services">
+    <section id="services" class="services-section">
         <div class="container">
-            <h2 class="section-title">Our Services</h2>
+            <h2 class="section-title">Our Solutions</h2>
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>Custom Fashion Design</h3>
-                    <p>From traditional attire to contemporary styles, we create bespoke clothing that fits perfectly and reflects your personality.</p>
+                    <h3>Artisanal Bakery Services</h3>
+                    <p>Custom celebration cakes, wedding cakes, birthday cakes, corporate event pastries, cupcakes, and specialty desserts crafted with premium ingredients and creative designs that tell your story.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Creative Styling</h3>
-                    <p>Expert fashion consultation and personal styling services to help you curate the perfect look for any occasion.</p>
+                    <h3>Poultry Technology Management</h3>
+                    <p>Comprehensive poultry farm setup, management consulting, automated feeding systems, health monitoring solutions, and production optimization for commercial poultry operations.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Beauty Consulting</h3>
-                    <p>Professional advice on enhancing your natural beauty and developing your signature style.</p>
+                    <h3>Foodservice Technology Solutions</h3>
+                    <p>Restaurant kitchen optimization, food safety systems, inventory management technology, cold chain solutions, and digital ordering platforms for food businesses.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Alterations & Tailoring</h3>
-                    <p>Precision alterations and tailoring services to ensure your garments fit flawlessly.</p>
+                    <h3>Product Development & Consulting</h3>
+                    <p>Custom recipe development, food product formulation, shelf-life optimization, packaging solutions, and market entry strategies for food entrepreneurs.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Event Styling</h3>
-                    <p>Complete styling packages for weddings, corporate events, and special occasions.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Fashion Training</h3>
-                    <p>Learn the art of fashion design and creative styling through our specialized training programs.</p>
+                    <h3>Bulk & Wholesale Supply</h3>
+                    <p>Commercial bakery supplies, ingredients sourcing, bulk poultry products, and B2B foodservice provisions for restaurants, hotels, and event centers across Abia State.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="contact-section">
         <div class="container">
-            <h2 class="section-title">Visit Us Today</h2>
             <div class="contact-content">
-                <p>Ready to elevate your style? Visit UC Health and Beauty Palace today or reach out to schedule your consultation. We're conveniently located in Umuahia North and ready to bring your fashion dreams to life.</p>
-                <div class="contact-details">
-                    <div class="contact-item">
-                        <span>📍 Apostle Christian Amajuoyi's compound, orie ugwu afaraukwu ibeku, Umuahia, Abia State</span>
-                    </div>
-                    <div class="contact-item">
-                        <span>📞 <a href="tel:+2348062593303">0806 259 3303</a></span>
-                    </div>
+                <h2 class="section-title">Get In Touch</h2>
+                <p>Ready to experience the Fajibs Cakez difference? Whether you need a show-stopping cake for your next celebration, want to upgrade your poultry operations, or seek innovative foodservice technology solutions, we're here to help.</p>
+                
+                <div class="contact-info">
+                    <h3>Visit Our Facility:</h3>
+                    <p>Apostle Christian Amajuoyi's compound, Orie Ugwu Afaraukwu Ibeku, Umuahia North, Abia State, Nigeria</p>
+                    
+                    <h3>Call or WhatsApp:</h3>
+                    <p><a href="tel:+2348062593303">+234 806 259 3303</a></p>
+                    
+                    <h3>Email:</h3>
+                    <p><a href="mailto:info@fajibscakez.com">info@fajibscakez.com</a></p>
+                    
+                    <h3>Business Hours:</h3>
+                    <p>Monday – Friday: 8:00 AM – 6:00 PM<br>
+                    Saturday: 9:00 AM – 4:00 PM<br>
+                    Sunday: By Appointment Only</p>
                 </div>
-                <p>Call or WhatsApp us at 0806 259 3303 to book your appointment. Walk-ins are also welcome during business hours. Let's create something beautiful together!</p>
-                <a href="https://wa.me/2348062593303" class="whatsapp-button" target="_blank">Chat on WhatsApp</a>
+                
+                <p>For custom cake orders, please contact us at least 72 hours in advance. For poultry tech consultations and foodservice solutions, schedule a free initial assessment by calling or messaging us on WhatsApp.</p>
+                
+                <a href="https://wa.me/2348062593303" class="whatsapp-button" target="_blank">Message Us on WhatsApp</a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <a href="https://wa.me/2348062593303" class="whatsapp-float" target="_blank" aria-label="WhatsApp">💬</a>
+
     <footer>
-        <p>&copy; 2024 UC Health and Beauty Palace. All rights reserved.</p>
+        <p>&copy; 2024 Fajibs Cakez Edible Solutions Limited. All rights reserved.</p>
     </footer>
 
-    <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/2348062593303" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
-        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-            <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.127c2.42 1.37 5.173 2.127 8.067 2.127 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.333c-2.547 0-5.053-0.72-7.2-2.087l-0.517-0.307-5.37 1.44 1.453-5.407-0.32-0.533c-1.44-2.213-2.213-4.773-2.213-7.44 0-7.36 5.987-13.333 13.333-13.333s13.333 5.973 13.333 13.333-5.973 13.333-13.333 13.333zM21.947 18.773c-0.267-0.133-1.573-0.773-1.813-0.867-0.24-0.080-0.427-0.133-0.6 0.133s-0.693 0.867-0.853 1.040c-0.147 0.173-0.307 0.187-0.573 0.067-0.267-0.133-1.12-0.413-2.133-1.307-0.787-0.693-1.32-1.56-1.467-1.827s-0.013-0.4 0.12-0.533c0.12-0.12 0.267-0.307 0.4-0.467s0.173-0.267 0.267-0.44c0.080-0.173 0.040-0.32-0.027-0.453s-0.6-1.44-0.827-1.973c-0.213-0.52-0.44-0.453-0.6-0.467-0.147-0.013-0.32-0.013-0.493-0.013s-0.453 0.067-0.693 0.32c-0.24 0.267-0.907 0.88-0.907 2.147s0.933 2.493 1.067 2.667c0.133 0.173 1.867 2.853 4.533 4 0.64 0.267 1.133 0.427 1.52 0.56 0.64 0.213 1.227 0.173 1.693 0.107 0.52-0.080 1.573-0.64 1.8-1.253s0.227-1.147 0.16-1.253c-0.067-0.107-0.253-0.173-0.52-0.307z"/>
-        </svg>
-    </a>
-
     <script>
-        // Mobile menu toggle
         const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
         const mobileMenu = document.querySelector('.mobile-menu');
 
@@ -629,7 +633,6 @@
                 mobileMenu.classList.toggle('active');
             });
 
-            // Close mobile menu when clicking a link
             const mobileLinks = mobileMenu.querySelectorAll('a');
             mobileLinks.forEach(link => {
                 link.addEventListener('click', () => {
